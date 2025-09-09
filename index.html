@@ -1,0 +1,143 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Proxima Store — Premium Reselling</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <style>
+    /* Premium styling */
+    body { background: linear-gradient(to bottom right, #0f172a, #1e293b); color: #f1f5f9; }
+    .product-card { transition: transform .3s ease, box-shadow .3s ease; }
+    .product-card:hover { transform: translateY(-10px) scale(1.02); box-shadow: 0 20px 40px rgba(0,0,0,0.4); }
+    .glow-text { text-shadow: 0 0 8px rgba(255,255,255,0.6); }
+  </style>
+</head>
+<body class="font-sans">
+  <header class="bg-gray-900/80 backdrop-blur sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto px-4 py-4 flex items-center justify-between">
+      <div class="flex items-center gap-3">
+        <div class="w-12 h-12 bg-gradient-to-r from-indigo-500 to-purple-600 text-white rounded-2xl flex items-center justify-center font-extrabold shadow-lg">PS</div>
+        <div>
+          <h1 class="text-xl font-bold glow-text">Proxima Store</h1>
+          <p class="text-xs text-gray-400">Premium • Trusted • Easy Reselling</p>
+        </div>
+      </div>
+      <nav class="flex items-center gap-4 text-sm">
+        <a href="#products" class="hover:text-indigo-400">Products</a>
+        <a href="#about" class="hover:text-indigo-400">About</a>
+        <a href="#contact" class="hover:text-indigo-400">Contact</a>
+        <a href="https://wa.me/919817306158" id="whatsappBtn" class="ml-3 bg-green-500 hover:bg-green-600 text-white px-4 py-2 rounded-lg shadow">WhatsApp</a>
+      </nav>
+    </div>
+  </header>  <main class="max-w-6xl mx-auto px-4 py-12">
+    <!-- Hero -->
+    <section class="grid md:grid-cols-2 gap-10 items-center">
+      <div>
+        <h2 class="text-4xl md:text-5xl font-extrabold mb-4 glow-text">Start Your Premium Reselling Journey</h2>
+        <p class="text-gray-300 mb-6 leading-relaxed">Launch your own online store without keeping stock. Add trending products, share them on WhatsApp/Instagram, and earn profits effortlessly with <span class="text-indigo-400 font-semibold">Proxima Store</span>.</p>
+        <div class="flex gap-4">
+          <a href="#products" class="bg-gradient-to-r from-indigo-500 to-purple-600 text-white px-6 py-3 rounded-xl shadow-lg font-medium hover:scale-105 transform transition">Explore Products</a>
+          <a href="#contact" class="border border-indigo-400 px-6 py-3 rounded-xl text-indigo-300 hover:bg-indigo-900/40 transition">Contact Us</a>
+        </div>
+      </div>
+      <div class="bg-gray-800/60 p-6 rounded-2xl shadow-xl">
+        <img src="https://images.unsplash.com/photo-1581091012184-7b76b5b1b1d6?auto=format&fit=crop&w=800&q=60" alt="products" class="w-full rounded-xl" />
+      </div>
+    </section><!-- Products -->
+<section id="products" class="mt-20">
+  <div class="flex items-center justify-between mb-8">
+    <h3 class="text-3xl font-bold glow-text">Featured Products</h3>
+    <button id="addSample" class="text-sm border px-4 py-2 rounded-lg border-indigo-400 hover:bg-indigo-900/50">Add Sample Product</button>
+  </div>
+  <div id="productGrid" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+    <!-- product cards injected by JS -->
+  </div>
+</section>
+
+<!-- About -->
+<section id="about" class="mt-20 bg-gray-900/60 p-8 rounded-2xl shadow-xl">
+  <h4 class="text-2xl font-bold mb-4 glow-text">About Proxima Store</h4>
+  <p class="text-gray-300 leading-relaxed">Proxima Store is a premium reselling platform designed to give you a luxury brand-like presence without upfront costs. Share products directly with customers, accept payments, and fulfill orders seamlessly with trusted suppliers.</p>
+  <div class="mt-6 grid sm:grid-cols-2 gap-6">
+    <div>
+      <h5 class="font-semibold text-indigo-300">How it Works</h5>
+      <ol class="text-sm text-gray-400 list-decimal ml-5 mt-3 space-y-1">
+        <li>Share catalog with customers via WhatsApp/Instagram</li>
+        <li>Collect payments securely</li>
+        <li>Place orders with suppliers</li>
+      </ol>
+    </div>
+    <div>
+      <h5 class="font-semibold text-indigo-300">Payments</h5>
+      <p class="text-sm text-gray-400 mt-3">Easily accept UPI, Paytm, or Google Pay. Keep healthy profit margins while offering reliable service.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Contact -->
+<section id="contact" class="mt-20 p-8 bg-gray-900/60 rounded-2xl shadow-xl">
+  <h4 class="text-2xl font-bold mb-4 glow-text">Contact Us</h4>
+  <p class="text-gray-300 mb-6">Need setup help or want to customize your store? Reach out directly via WhatsApp or email.</p>
+  <div class="grid sm:grid-cols-2 gap-6">
+    <div class="bg-gray-800/70 p-6 rounded-xl shadow-lg">
+      <h6 class="font-semibold text-indigo-300">WhatsApp</h6>
+      <p class="text-sm text-gray-400 mt-3">Chat with us instantly: <a href="https://wa.me/919817306158" class="text-indigo-400">wa.me/919817306158</a></p>
+    </div>
+    <div class="bg-gray-800/70 p-6 rounded-xl shadow-lg">
+      <h6 class="font-semibold text-indigo-300">Email</h6>
+      <p class="text-sm text-gray-400 mt-3">proxima@example.com</p>
+    </div>
+  </div>
+</section>
+
+<footer class="mt-20 text-center text-xs text-gray-500">© 2025 Proxima Store — All rights reserved</footer>
+
+  </main>  <script>
+    // Demo product data & render
+    const sampleProducts = [
+      {id:1, title:'Tempered Glass + Cover', price:299, mrp:499, img:'https://images.unsplash.com/photo-1512496015851-a90fb38ba796?auto=format&fit=crop&w=600&q=60'},
+      {id:2, title:'Wireless Earbuds', price:799, mrp:1299, img:'https://images.unsplash.com/photo-1580894908361-6aa1c7b3f8f4?auto=format&fit=crop&w=600&q=60'},
+      {id:3, title:'Power Bank 10000mAh', price:899, mrp:1499, img:'https://images.unsplash.com/photo-1603791440384-56cd371ee9a7?auto=format&fit=crop&w=600&q=60'}
+    ];
+
+    function renderProduct(p){
+      return `
+        <div class="product-card bg-gray-800/70 rounded-2xl p-5 shadow-lg">
+          <img src="${p.img}" alt="${p.title}" class="w-full h-48 object-cover rounded-xl mb-4">
+          <h4 class="font-semibold text-lg text-white">${p.title}</h4>
+          <div class="flex items-center gap-3 mt-3">
+            <div class="text-xl font-bold text-indigo-400">₹${p.price}</div>
+            <div class="text-sm line-through text-gray-500">₹${p.mrp}</div>
+          </div>
+          <p class="text-sm text-gray-400 mt-2">Ships in 3–7 days</p>
+          <div class="mt-4 flex gap-2">
+            <a href="https://wa.me/919817306158?text=I%20want%20to%20order%20${encodeURIComponent(p.title)}%20for%20₹${p.price}" class="flex-1 text-center bg-gradient-to-r from-green-500 to-green-600 text-white px-3 py-2 rounded-lg shadow hover:scale-105 transform transition">Order</a>
+            <button onclick="copyLink(${p.id})" class="px-3 py-2 border border-gray-500 rounded-lg hover:bg-gray-700">Copy Link</button>
+          </div>
+        </div>
+      `;
+    }
+
+    function loadProducts(){
+      const grid = document.getElementById('productGrid');
+      grid.innerHTML = sampleProducts.map(renderProduct).join('');
+    }
+
+    function copyLink(id){
+      const prod = sampleProducts.find(p=>p.id===id);
+      const url = location.href + '#product-' + id;
+      navigator.clipboard.writeText(url).then(()=>alert('Product link copied. Share it anywhere!'));
+    }
+
+    document.getElementById('addSample').addEventListener('click', ()=>{
+      const id = sampleProducts.length+1;
+      sampleProducts.push({id, title:'New Product '+id, price:499, mrp:799, img:sampleProducts[0].img});
+      loadProducts();
+    });
+
+    // initial load
+    loadProducts();
+  </script></body>
+</html>
